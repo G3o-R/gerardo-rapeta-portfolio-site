@@ -1,4 +1,5 @@
 import { Home } from "../../styles/PageStyles/HomePageStyles";
+import Hero from "../Hero";
 
 
 export default function HomePage(){
@@ -6,7 +7,7 @@ export default function HomePage(){
 
     return(
         <Home className="home">
-            home is here
+            <Hero />
         </Home>
     )
 }

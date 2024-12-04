@@ -1,22 +1,11 @@
-import {
-  Home,
-  ContentWrapper,
-  ContentContainer,
-} from "../../styles/PageStyles/HomePageStyles";
-import Hero from "../Hero";
-import PortfolioCard from "../PortfolioCard";
+import { StyledHomePage } from "../../styles/Page_Styles/HomePageStyles";
 
-export default function HomePage() {
-  return (
-    <Home className="home">
-      <Hero />
-      <ContentWrapper>
-        <ContentContainer>
-          <PortfolioCard />
-          <PortfolioCard />
-          <PortfolioCard />
-        </ContentContainer>
-      </ContentWrapper>
-    </Home>
-  );
+
+export default function HomePage(){
+
+    return (
+        <StyledHomePage>
+            
+        </StyledHomePage>
+    )
 }

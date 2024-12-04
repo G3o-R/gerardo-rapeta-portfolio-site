@@ -38,3 +38,13 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: InriaSerif-Regular;
+  src: url(../../public/InriaSerif-Regular.ttf)
+}
+
+@font-face {
+  font-family: Arsenal-Regular;
+  src: url(../../public/Arsenal-Regular.ttf)
+}

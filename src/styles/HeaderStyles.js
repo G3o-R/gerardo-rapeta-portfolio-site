@@ -145,7 +145,7 @@ export const TextBoxContainer = styled.div`
   padding-left: 30px;
   text-align: left;
 
-  h3 {
+  h1 {
     font-size: 2.5rem;
     font-weight: normal;
     color: #dee7e1;

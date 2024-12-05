@@ -7,8 +7,8 @@ import {
   ImageWrapper,
   TextBoxContainer,
   TextBoxWrapper,
-} from "../styles/HeaderStyles";
-import ProfilePic from "../images/ProfilePic.jpg"
+} from "../../styles/HeaderStyles";
+import ProfilePic from "../../images/ProfilePic.jpg"
 
 export default function Header() {
   return (
@@ -27,9 +27,9 @@ export default function Header() {
           <GeneralContainer className="container text">
             <TextBoxWrapper className="text-box-wrapper">
               <TextBoxContainer className="text-box-container">
-                <h3>
+                <h1>
                   GERARDO JOSE RAPETA JR <span>-Web Developer</span>
-                </h3>
+                </h1>
                 <ul>
                   <li>
                     <strong>Aliases:</strong> "Geo", "Dork", "Bane of Tacos"

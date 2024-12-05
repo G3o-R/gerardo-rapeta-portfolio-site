@@ -1,10 +1,10 @@
 import { StyledHomePage } from "../../styles/Page_Styles/HomePageStyles";
-import About from "../About";
-import Biography from "../Biography";
-import Footer from "../Footer";
-import Header from "../Header";
-import Projects from "../Projects";
-import Skills from "../Skills";
+import About from "../sections/About";
+import Biography from "../sections/Biography";
+import Footer from "../sections/Footer";
+import Header from "../sections/Header";
+import Projects from "../sections/Projects";
+import Skills from "../sections/Skills";
 
 
 export default function HomePage(){

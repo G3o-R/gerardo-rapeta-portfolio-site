@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MainCardContainer = styled.div`
   position: relative;
   width: 100%;
-  max-width: 25em;
+  max-width: 26em;
   aspect-ratio: 16/11;
 `;
 

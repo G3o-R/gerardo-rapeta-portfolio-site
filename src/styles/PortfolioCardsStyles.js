@@ -87,14 +87,14 @@ export const TextContainer = styled.div`
     margin: 0.625em 0.625em auto; 
     p {
       font-size: auto;
-      line-height: 1.5;
+      line-height: 1.25;
       text-align: center;
       color: #dee7e1;
-      @media screen and (min-width: 25em) {
+      @media screen and (min-width: 400px) {
         font-size: 1.125em;
       }
 
-      @media screen and (min-width: 35.5em) {
+      @media screen and (min-width: 568px) {
         font-size: 1.25em;
       }
     }

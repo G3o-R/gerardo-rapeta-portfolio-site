@@ -20,9 +20,9 @@ export const ProjectsContainer = styled.div`
     gap: 15px;
     overflow: visible;
     overflow-x: scroll;
-    height: 275px;
+    height: 300px;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     box-sizing: border-box;
     margin: 0 auto;
     &::-webkit-scrollbar {

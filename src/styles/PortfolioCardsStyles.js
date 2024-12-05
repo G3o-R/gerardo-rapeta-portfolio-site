@@ -5,9 +5,6 @@ export const MainCardContainer = styled.div`
   width: 100%;
   max-width: 400px;
   aspect-ratio: 16/11;
-  @media screen and (max-width: 868px){
-    /* width: 400px; */
-  }
 `;
 
 export const Card = styled.div`
@@ -80,7 +77,7 @@ export const TextContainer = styled.div`
     justify-content: center;
     align-items: center;
     p {
-      font-size: 28px;
+      font-size: 1.75em;
       font-weight: bold;
       color: #dee7e1;
     }
@@ -94,11 +91,11 @@ export const TextContainer = styled.div`
       text-align: center;
       color: #dee7e1;
       @media screen and (min-width: 400px) {
-        font-size: 18px
+        font-size: 1.125em
       }
 
       @media screen and (min-width: 568px){
-        font-size: 20px;
+        font-size: 1.25em;
       }
     }
   }
@@ -113,7 +110,7 @@ export const LinksContainer = styled.div`
 
   a, div {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: bold;
     color: #ffffff;
     padding: 10px 20px;

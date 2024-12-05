@@ -27,9 +27,9 @@ export default function Header() {
           <GeneralContainer className="container text">
             <TextBoxWrapper className="text-box-wrapper">
               <TextBoxContainer className="text-box-container">
-                <h1>
+                <h3>
                   GERARDO JOSE RAPETA JR <span>-Web Developer</span>
-                </h1>
+                </h3>
                 <ul>
                   <li>
                     <strong>Aliases:</strong> "Geo", "Dork", "Bane of Tacos"
@@ -41,7 +41,7 @@ export default function Header() {
                     <strong>Length:</strong> 5' 12"
                   </li>
                   <li>
-                    <strong>Weight:</strong> ( ͠° ͟ʖ ͡°)
+                    <strong>Weight:</strong> (｢•-•)｢ ʷʱʸ?
                   </li>
                   <li>
                     <strong>Special Skills:</strong> "Making things look cool,

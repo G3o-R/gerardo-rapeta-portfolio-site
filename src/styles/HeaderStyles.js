@@ -47,7 +47,7 @@ export const GeneralWrapper = styled.div`
 
     }
     
-    @media screen and (max-width: 1080px) {
+    @media screen and (max-width: 1079px) {
     max-height: 450px;
     }
     
@@ -74,9 +74,9 @@ export const GeneralContainer = styled.div`
     justify-content: center;
     align-items: center;
     box-shadow: inset 0px 4px 90px 0px rgb(0, 0, 0, 0.5);
-
-    @media screen and (max-width: 1080px) {
-    max-height: 450px;
+    
+    @media screen and (max-width: 1079px) {
+      max-height: 450px;
     }
   }
 
@@ -88,12 +88,10 @@ export const GeneralContainer = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
-  max-width: 400px;
-  aspect-ratio: 100%;
-  overflow: hidden;
-  background-color: #334534;
-  margin: 25px;
+  background-image: linear-gradient(to bottom right, #0d6759, #334534);
   padding: 5px;
+  aspect-ratio: 1/1;
+  margin: 25px;
   border-radius: 50%;
   filter: drop-shadow(10px 8px 10px rgb(0, 0, 0, 0.25));
 
@@ -118,11 +116,10 @@ export const ImageContainer = styled.div`
 export const TextBoxWrapper = styled.div`
   width: 100%;
   height: 100%;
-  border-radius: 32px;
   margin: 20px;
   max-width: 750px;
   @media screen and (min-width: 1080px){
-    max-height: 450px;
+    max-height: 85%;
     
   }
 
@@ -148,7 +145,7 @@ export const TextBoxContainer = styled.div`
   padding-left: 30px;
   text-align: left;
 
-  h1 {
+  h3 {
     font-size: 2.5rem;
     font-weight: normal;
     color: #dee7e1;
@@ -170,7 +167,7 @@ export const TextBoxContainer = styled.div`
   }
 
   @media screen and (max-width: 1560px) {
-    h1,
+    h3,
     span {
       display: block;
       margin-right: 0;

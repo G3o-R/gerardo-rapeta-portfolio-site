@@ -18,7 +18,7 @@ export default function Header() {
           <GeneralContainer className="container pfp">
             <ImageWrapper>
               <ImageContainer>
-                <img src={ProfilePic} alt="" />
+                <img src={ProfilePic} loading="lazy" alt="" />
                 </ImageContainer>
             </ImageWrapper>
           </GeneralContainer>

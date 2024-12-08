@@ -28,7 +28,6 @@ export const ProjectsContainer = styled.div`
   scroll-snap-type: x mandatory;
   & > * {
     scroll-snap-align: center;
-    /* flex: 0 0 auto; */
   }
 
   &::-webkit-scrollbar {
@@ -37,13 +36,10 @@ export const ProjectsContainer = styled.div`
 
   &::-webkit-scrollbar-thumb {
     cursor: pointer;
-    background: #bcbfc1;
+    background: linear-gradient(to top, #0d110d, #334534);
     border-radius: 4px;
   }
 
-  &::-webkit-scrollbar-thumb:hover {
-    background: #d3d4d6;
-  }
   @media screen and (min-width: 868px) {
     max-width: 900px;
     width: 100%;

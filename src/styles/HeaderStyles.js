@@ -30,6 +30,10 @@ export const GeneralWrapper = styled.div`
     background-color: #232323;
     filter: drop-shadow(36px 0px 49px rgb(0, 0, 0, 0.44));
     overflow: hidden;
+    @media screen and (max-width: 650px) {
+      min-height: 250px;
+      height: calc(100vw - 140px);
+    }
 
     &::before {
       content: "";
@@ -60,9 +64,6 @@ export const GeneralWrapper = styled.div`
     width: 100%;
     height: 100%;
     position: relative;
-    @media screen and (max-width: 568px) {
-      /* height: 560; */
-    }
   }
   `;
 
@@ -94,6 +95,11 @@ export const ImageWrapper = styled.div`
   margin: 25px;
   border-radius: 50%;
   filter: drop-shadow(10px 8px 10px rgb(0, 0, 0, 0.25));
+
+  @media screen and (max-width: 650px) {
+    /* width: 400px; */
+  }
+
 
   @media screen and (min-width: 1560px) {
     max-width: 600px;

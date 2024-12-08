@@ -7,6 +7,7 @@ import {
   ImageWrapper,
   TextBoxContainer,
   TextBoxWrapper,
+  UnderLay,
 } from "../../styles/HeaderStyles";
 import ProfilePic from "../../images/ProfilePic.jpg"
 
@@ -18,7 +19,7 @@ export default function Header() {
           <GeneralContainer className="container pfp">
             <ImageWrapper>
               <ImageContainer>
-                <img src={ProfilePic} loading="lazy" alt="" />
+                <img src={ProfilePic} loading="lazy" alt="Gerardo Rapeta- Web Developer" />
                 </ImageContainer>
             </ImageWrapper>
           </GeneralContainer>

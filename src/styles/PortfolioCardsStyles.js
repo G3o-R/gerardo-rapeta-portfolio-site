@@ -17,6 +17,9 @@ export const Card = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 4px 4px 23px 2px #33453425;
+  border: 1px solid #09290b;
+  margin: 1px;
   &.active {
     transform: rotateY(180deg);
   }
@@ -31,7 +34,6 @@ export const FrontFace = styled.div`
   background: linear-gradient(to bottom right, #1a1a1a, #2d2d2d);
   border-radius: 1.5em; 
   overflow: hidden;
-  box-shadow: 0em 0.25em 0.625em rgba(0, 0, 0, 0.3);
 `;
 
 export const ImageWrapper = styled.div`
@@ -64,10 +66,8 @@ export const BackFace = styled.div`
   background: linear-gradient(to bottom right, #2d2d2d, #1a1a1a);
   transform: rotateY(180deg);
   border-radius: 1.5em;
-  border: 0.1875em solid #1a1a1a;
   overflow: hidden;
   color: #dee7e1;
-  box-shadow: 0em 0.25em 0.625em rgba(0, 0, 0, 0.3);
 `;
 
 export const TextContainer = styled.div`

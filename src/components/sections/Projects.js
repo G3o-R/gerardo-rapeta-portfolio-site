@@ -11,11 +11,6 @@ export default function Projects(){
                 <ORCCard />
                 <SaldanasGarageCard />
                 <GerardoRapetaPortfolioCard />
-                {/* <GerardoRapetaPortfolioCard />
-                <GerardoRapetaPortfolioCard />
-                <GerardoRapetaPortfolioCard />
-                <GerardoRapetaPortfolioCard />
-                <GerardoRapetaPortfolioCard /> */}
             </ProjectsContainer>
         </ProjectsSection>
     )

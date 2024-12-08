@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const ProjectsSection = styled.section`
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 868px ){
+    padding: 20px;    
+  }
 `;
 
 export const HeaderContainer = styled.div`
@@ -13,19 +15,23 @@ export const HeaderContainer = styled.div`
 `;
 
 export const ProjectsContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    /* align-items: center; */
-    gap: 15px;
-    overflow: visible;
-    overflow-x: scroll;
-    height: 300px;
-    width: 100%;
-    padding: 5px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    &::-webkit-scrollbar {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  overflow: visible;
+  overflow-x: scroll;
+  height: 300px;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  scroll-snap-type: x mandatory;
+  & > * {
+    scroll-snap-align: center;
+    /* flex: 0 0 auto; */
+  }
+
+  &::-webkit-scrollbar {
     height: 8px;
   }
 

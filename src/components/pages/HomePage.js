@@ -8,9 +8,6 @@ import Skills from "../sections/Skills";
 
 
 export default function HomePage(){
-    // const height = (window.innerHeight)
-    // const width = (window.innerWidth)
-
     return (
         <StyledHomePage>
             <Header />

@@ -7,7 +7,6 @@ import {
   ImageWrapper,
   TextBoxContainer,
   TextBoxWrapper,
-  UnderLay,
 } from "../../styles/HeaderStyles";
 import ProfilePic from "../../images/ProfilePic.jpg"
 

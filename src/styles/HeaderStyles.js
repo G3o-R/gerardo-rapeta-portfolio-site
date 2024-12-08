@@ -21,8 +21,6 @@ export const HeaderContainer = styled.div`
   }
 `;
 
-// export const UnderLay =
-
 export const GeneralWrapper = styled.div`
   &.pfp {
     position: relative;

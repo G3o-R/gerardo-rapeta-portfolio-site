@@ -87,7 +87,7 @@ export const TextContainer = styled.div`
     margin: 0.625em 0.625em auto; 
     p {
       font-size: auto;
-      line-height: 1.25;
+      line-height: 1.5;
       text-align: center;
       color: #dee7e1;
       @media screen and (min-width: 400px) {

@@ -17,7 +17,8 @@ export const AboutCardWrapper = styled.div`
 
 export const AboutCardContainer = styled.div`
   height: 100%;
-  background: linear-gradient(to bottom right, #1a1a1a, #2d2d2d);
+  /* background: linear-gradient(to bottom right, #1a1a1a, #2d2d2d); */
+  background: linear-gradient(to bottom right, #1a1a1a, #0D110D);
   padding: 2rem;
   border-radius: 18px;
   border: 1px solid #09290b;
@@ -30,7 +31,6 @@ export const AboutCardContainer = styled.div`
 export const Header = styled.div`
   width: 100%;
   text-align: left;
-  /* margin-left: 2rem; */
 
   h1 {
     text-transform: uppercase;
@@ -39,19 +39,18 @@ export const Header = styled.div`
     font-weight: normal;
     margin: 0;
 
-    /* Base font size for large screens */
     font-size: 4rem;
 
     @media screen and (max-width: 768px) {
-      font-size: 3rem; /* Smaller tablets */
+      font-size: 3rem;
     }
 
     @media screen and (max-width: 480px) {
-      font-size: 2.5rem; /* Small phones */
+      font-size: 2.5rem;
     }
 
     @media screen and (max-width: 360px) {
-      font-size: 2rem; /* Very small phones */
+      font-size: 2rem;
     }
   }
 `;

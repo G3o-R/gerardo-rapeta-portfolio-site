@@ -31,8 +31,9 @@ export const FrontFace = styled.div`
   height: 100%;
   backface-visibility: hidden;
   background-color: #2d2d2d;
-  background: linear-gradient(to bottom right, #1a1a1a, #2d2d2d);
-  border-radius: 1.5em; 
+  /* background: linear-gradient(to bottom right, #1a1a1a, #2d2d2d); */
+  background: linear-gradient(to bottom right, #1a1a1a, #0D110D);
+  border-radius: 1.5em;
   overflow: hidden;
 `;
 
@@ -63,6 +64,7 @@ export const BackFace = styled.div`
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  /* background: linear-gradient(to top left, #1a1a1a, #0D110D); */
   background: linear-gradient(to bottom right, #2d2d2d, #1a1a1a);
   transform: rotateY(180deg);
   border-radius: 1.5em;

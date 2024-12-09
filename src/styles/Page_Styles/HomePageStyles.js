@@ -3,10 +3,12 @@ import styled from "styled-components";
 export const StyledHomePage = styled.div`
 overflow-x: hidden;
   h1, p{
+    color: #dee7e1;
     font-family: Arsenal-Regular;
   }
   li, h2 {
     font-family: InriaSerifRegular;
+    color: #dee7e1;
   }
   h2{
     color: #dee7e1;

@@ -23,23 +23,41 @@ export const Header = styled.div`
 export const JourneyCardsWrapper = styled.div`
   max-width: 1560px;
   width: 100%;
+  background-color: #1a1a1a;
 `;
 
 export const JourneyCardsContainer = styled(motion.div)`
+  cursor: pointer;
   position: relative;
-  padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   gap: 20px;
   max-width: 1560px;
+  padding: 4.5rem .75rem .5rem;
 
-  &.row-display {
-    position: static;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0;
+  @media screen and (max-width: 1560px) {
+    &.fan{
+      overflow:hidden;
+    }
+    overflow-y:hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  & > * {
+    scroll-snap-align: center;
   }
+
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: linear-gradient(to top, #0d110d, #334534);
+    border-radius: 4px;
+  }
+  }
+
 `;
 
 // card related styles
@@ -48,6 +66,7 @@ export const CardWrapper = styled(motion.div)`
   max-width: 300px;
   aspect-ratio: 3/5;
   width: 100%;
+  cursor: pointer;
 
   &.card-1 {
     z-index: 5;
@@ -90,12 +109,12 @@ export const CardContainer = styled.div`
 `;
 
 export const TextBoxWrapper = styled.div`
-  width: 100%;
+  /* width: 100%; */
 `;
 
 export const TextBoxContainer = styled.div`
   text-align: left;
-  width: 100%;
+  /* width: 100%; */
   padding: 0.75rem;
   /* opacity: 0; */
 
@@ -106,7 +125,7 @@ export const TextBoxContainer = styled.div`
   }
 
   p {
-    margin-right: 3em;
+    margin-right: 2em;
     font-size: 1.25rem;
   }
 `;

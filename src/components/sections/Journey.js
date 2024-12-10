@@ -17,7 +17,7 @@ export default function Journey() {
 
   const handleMouseEnter = () => {
     // timeoutRef.current = setTimeout(() => {
-      setEffect("display");
+    setEffect("display");
     // }, 750);
   };
 
@@ -103,14 +103,14 @@ export default function Journey() {
       </Header>
       <JourneyCardsWrapper className="cards-wrapper">
         <JourneyCardsContainer
-          className="cards-container"
+          className={`cards-container ${effect}`}
           onClick={handleMouseEnter}
         >
           {cardsData.map((cardData, index) => (
             <CardWrapper
-            key={cardData.id}
-          onMouseEnter={handleMouseEnter}
-          className={`card-wrapper card-${index + 1}`}
+              key={cardData.id}
+              onClick={handleMouseEnter}
+              className={`card-wrapper card-${index + 1}`}
               animate={
                 effect === "fan"
                   ? {
@@ -143,9 +143,9 @@ export default function Journey() {
               }
               transition={{ duration: 0.3, delay: 0.1 * index }}
             >
-              <CardContainer>
-                <TextBoxWrapper>
-                  <TextBoxContainer>
+              <CardContainer className="card-container">
+                <TextBoxWrapper className="text-box-wrapper">
+                  <TextBoxContainer className="text-box-container">
                     <h2>{cardData.title}</h2>
                     <p>{cardData.content}</p>
                   </TextBoxContainer>
@@ -159,7 +159,7 @@ export default function Journey() {
                 <TextBoxContainer>
                   <h2>Hi!</h2>
                   <p>
-                    if you're reading this the purpose of this card the purpose
+                    if you're reading this the purpose
                     of this is to provide a height to the JourneyCardsContainer
                     as changing the z-index results in the container having no
                     content to provide it's dimensions

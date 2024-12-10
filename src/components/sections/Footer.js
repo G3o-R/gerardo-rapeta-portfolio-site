@@ -1,5 +1,12 @@
+import { FooterContainer, FooterWrapper } from "../../styles/FooterStyles";
 
 
 export default function Footer(){
-    return(<div>Footer</div>)
+    return(
+        <FooterWrapper>
+            <FooterContainer>
+                
+            </FooterContainer>
+        </FooterWrapper>
+    )
 }

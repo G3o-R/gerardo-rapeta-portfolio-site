@@ -24,21 +24,21 @@ export default function Journey() {
       id: 1,
       title: "Why?",
       content:
-        "This all started from an addiction and need to understand how things work. It began when I was a child playing with Legos, grew even more when I tore apart a washing machine so I could figure out what makes it spin, and only got more intense when I figured out I could make some pretty cool stuff with what I knew. Thus anything I could ever want, I could have, so long as I knew how to make it...",
+        "This all started with an addiction and a need to understand how things work. It began when I was a child playing with Legos, grew even more when I tore apart a washing machine so I could figure out what makes it spin, and it only got more intense when I figured out I could make some pretty cool stuff with what I knew. Thus, anything I could ever want, I could have, so long as I knew how to make it...",
       animation: { y: 0, x: 0, rotate: 0 },
     },
     {
       id: 2,
       title: "Flatiron",
       content:
-        "I knew college wasn’t for me. I live in Arizona, home to ASU, GCU, and NAU. All good schools with amazing parties. But I didn’t feel like spending over a hundred grand to find out that alcohol is awesome. That’s what families for. Then I heard about Flatiron, saw a 6% acceptance rate and said challenge accepted.",
+        "I knew college wasn’t for me. I live in Arizona, home to ASU, GCU, and NAU. All good schools with amazing parties. But I didn’t feel like spending over a hundred grand to find out that alcohol is awesome. That’s what family is for. Then I heard about Flatiron, saw a 6% acceptance rate and said, \"challenge accepted\".",
       animation: { y: -10, x: 30, rotate: 15 },
     },
     {
       id: 3,
       title: "Bazar",
       content:
-        "My first internship was at a startup with Bazar Enterprises. Madhav if you’re reading this, I apologize for my lack of communication, I saw a butterfly. But the experience was still very valuable and taught me the process of developing a large app and especially working with a team.",
+        "My first internship was at a startup with Bazar Enterprises. Madhav, if you’re reading this, I apologize for my lack of communication, I saw a butterfly. However the experience was still very valuable and taught me the process of developing a large app and especially working with a team.",
       animation: { y: -10, x: -30, rotate: -15 },
     },
     {

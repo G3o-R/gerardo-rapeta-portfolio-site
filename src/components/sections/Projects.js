@@ -3,11 +3,11 @@ import { ORCCard, SaldanasGarageCard, GerardoRapetaPortfolioCard } from "../Port
 
 export default function Projects(){
     return(
-        <ProjectsSection>
-            <HeaderContainer>
+        <ProjectsSection className="projects-section">
+            <HeaderContainer className="header-container">
                 <h2>Recent Projects</h2>
             </HeaderContainer>
-            <ProjectsContainer>
+            <ProjectsContainer className="projects-container">
                 <ORCCard />
                 <SaldanasGarageCard />
                 <GerardoRapetaPortfolioCard />

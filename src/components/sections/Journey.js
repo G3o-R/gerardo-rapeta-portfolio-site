@@ -95,8 +95,8 @@ export default function Journey() {
   }, []);
 
   return (
-    <JourneySection ref={journeyRef}>
-      <Header>
+    <JourneySection ref={journeyRef} className="journey-section">
+      <Header className="header-container">
         <h2>Web Dev Journey</h2>
       </Header>
       <JourneyCardsWrapper className="cards-wrapper">
@@ -152,9 +152,9 @@ export default function Journey() {
             </CardWrapper>
           ))}
           <CardWrapper className="card-wrapper spacer">
-            <CardContainer>
-              <TextBoxWrapper>
-                <TextBoxContainer>
+            <CardContainer className="card-container">
+              <TextBoxWrapper className="text-box-wrapper">
+                <TextBoxContainer className="text-box-container">
                   <h2>Hi!</h2>
                   <p>
                     if you're reading this the purpose

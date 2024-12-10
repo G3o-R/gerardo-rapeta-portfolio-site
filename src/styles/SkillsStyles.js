@@ -65,7 +65,7 @@ export const TextBoxContainer = styled.div`
   width: 100%;
   padding: .75rem;
 
-  h1 {
+  h2 {
     font-weight: normal;
     font-size: 3rem;
     text-decoration: underline;

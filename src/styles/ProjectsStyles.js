@@ -12,8 +12,11 @@ export const ProjectsSection = styled.section`
 
 export const HeaderContainer = styled.div`
   margin-bottom: 20px;
+  padding: 0 1.5rem;
   h2{
     margin-bottom: 0;
+    margin: 5px;
+
   }
 `;
 

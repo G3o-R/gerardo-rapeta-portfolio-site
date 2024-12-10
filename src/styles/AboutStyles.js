@@ -32,7 +32,7 @@ export const Header = styled.div`
   width: 100%;
   text-align: left;
 
-  h1 {
+  h2 {
     text-transform: uppercase;
     color: #dee7e1;
     text-decoration: underline;

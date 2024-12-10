@@ -9,14 +9,14 @@ import {
 
 export default function About() {
   return (
-    <AboutSection>
-      <AboutCardWrapper>
-        <AboutCardContainer>
-          <Header>
-            <h1> About me</h1>
+    <AboutSection className="about-section">
+      <AboutCardWrapper className="card-wrapper">
+        <AboutCardContainer className="card-container">
+          <Header className="header-container">
+            <h2> About me</h2>
           </Header>
-          <TextWrapper>
-            <TextContainer>
+          <TextWrapper className="text-wrapper">
+            <TextContainer className="text-container">
               <p>
                 Graduated from Flatiron School’s Software Engineering Flex
                 Program. I always knew I wanted to be an engineer even when I

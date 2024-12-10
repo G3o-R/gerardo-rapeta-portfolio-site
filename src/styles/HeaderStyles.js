@@ -89,7 +89,7 @@ export const GeneralContainer = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
-  background-image: linear-gradient(to bottom right, #0d6759, #334534);
+  background-image: linear-gradient(to bottom right, #0d6759, #0D110D);
   padding: 5px;
   aspect-ratio: 1/1;
   margin: 25px;

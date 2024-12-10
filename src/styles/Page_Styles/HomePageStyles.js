@@ -25,4 +25,5 @@ overflow-x: hidden;
     font-family: InriaSerifRegular;
     color: #DEE7E1;
   }
+
 `;

@@ -24,7 +24,7 @@ export default function Skills() {
 
   return (
     <SkillsSection className="skills-section">
-      <Header className="header">
+      <Header className="header-container">
         <h2>Skills</h2>
       </Header>
       <SkillsContainer className="skills-container">
@@ -43,7 +43,7 @@ export default function Skills() {
               <SkillCardContainer className="card-container">
                 <TextBoxWrapper className="text-wrapper">
                   <TextBoxContainer className="text-container">
-                    <h1>Technical</h1>
+                    <h2>Technical</h2>
                     <ul>
                       <li>JavaScript/React</li>
                       <li>Ruby On Rails</li>
@@ -63,7 +63,7 @@ export default function Skills() {
               <SkillCardContainer>
                 <TextBoxWrapper>
                   <TextBoxContainer>
-                    <h1>Soft</h1>
+                    <h2>Soft</h2>
                     <ul>
                       <li>Fast learner</li>
                       <li>Adaptable</li>

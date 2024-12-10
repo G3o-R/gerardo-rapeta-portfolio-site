@@ -65,10 +65,10 @@ export default function Skills() {
                   <TextBoxContainer>
                     <h1>Soft</h1>
                     <ul>
-                      <li>Ridiculously fast learner</li>
-                      <li>Amazing at watching anime</li>
+                      <li>Fast learner</li>
                       <li>Adaptable</li>
-                      <li>Semi-funny</li>
+                      <li>Excellent pattern recognition</li>
+                      <li>Team player</li>
                     </ul>
                   </TextBoxContainer>
                 </TextBoxWrapper>

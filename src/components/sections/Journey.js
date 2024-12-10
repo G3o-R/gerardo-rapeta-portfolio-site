@@ -13,20 +13,18 @@ import {
 export default function Journey() {
   const [effect, setEffect] = useState("display");
   const journeyRef = useRef(null);
-  const timeoutRef = useRef(null); // Ref for the timeout
+  const timeoutRef = useRef(null);
 
   const handleMouseEnter = () => {
-    // timeoutRef.current = setTimeout(() => {
     setEffect("display");
-    // }, 750);
   };
 
   const cardsData = [
     {
       id: 1,
-      title: "Legos",
+      title: "Why?",
       content:
-        "Legos were my first exposure to engineering. Almost entirely unrelated to coding, but my point is that I’ve been thinking in three dimensions since I was eight. Especially when gears were involved.",
+        "This all started from an addiction and need to understand how things work. It began when I was a child playing with Legos, grew even more when I tore apart a washing machine so I could figure out what makes it spin, and only got more intense when I figured out I could make some pretty cool stuff with what I knew. Thus anything I could ever want, I could have, so long as I knew how to make it...",
       animation: { y: 0, x: 0, rotate: 0 },
     },
     {
@@ -40,7 +38,7 @@ export default function Journey() {
       id: 3,
       title: "Bazar",
       content:
-        "My first internship was at a startup with Bazar Enterprises. Madhav if you’re reading this, I apologize for my lack of communication; I saw a butterfly. But the experience was still very valuable and taught me the process of developing a large app and especially working with a team.",
+        "My first internship was at a startup with Bazar Enterprises. Madhav if you’re reading this, I apologize for my lack of communication, I saw a butterfly. But the experience was still very valuable and taught me the process of developing a large app and especially working with a team.",
       animation: { y: -10, x: -30, rotate: -15 },
     },
     {
@@ -54,7 +52,7 @@ export default function Journey() {
       id: 5,
       title: "Current Day",
       content:
-        "I make it a point to learn something new anytime I feel limited by what I know now. Anything I see that looks cool, I take it as a challenge to reproduce and improve upon. Anything I want to make, I make—regardless of an outdated NPM package or unknown skill. I’ll figure it out.",
+        "I make it a point to learn something new anytime I feel limited by what I know now. Anything I see that looks cool, I take it as a challenge to reproduce and improve upon. Anything I want to make, I make regardless of an outdated NPM package or unknown skill. I’ll figure it out.",
       animation: { y: -10, x: -60, rotate: -30 },
     },
   ];

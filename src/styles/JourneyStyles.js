@@ -23,7 +23,6 @@ export const Header = styled.div`
 export const JourneyCardsWrapper = styled.div`
   max-width: 1560px;
   width: 100%;
-  background-color: #1a1a1a;
 `;
 
 export const JourneyCardsContainer = styled(motion.div)`

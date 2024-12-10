@@ -8,7 +8,7 @@ import {
   TextContainer,
   LinksContainer,
 } from "../styles/PortfolioCardsStyles";
-import ORCFront from "../images/ORCFront.jpg";
+import ORCFront from "../images/ORCFront.avif";
 import SalGarFront from "../images/SalGarFront.jpg";
 import GeoRapetaPortfolio from "../images/GeoRapetaPortfolio.jpg"
 import { useState } from "react";

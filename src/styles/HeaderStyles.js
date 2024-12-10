@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import PolkADot from "../images/PolkADot.jpg";
+import PolkADot from "../images/PolkADot.avif";
 
 export const HeaderWrapper = styled.div`
   width: 100%;

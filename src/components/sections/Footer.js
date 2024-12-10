@@ -5,7 +5,7 @@ import {
   ImageWrapper,
   InfoContainer,
 } from "../../styles/FooterStyles";
-import ProfilePic from "../../images/ProfilePic.jpg"
+import ProfilePic from "../../images/GeoRapetaPortfolioPic.avif"
 
 export default function Footer() {
     return (

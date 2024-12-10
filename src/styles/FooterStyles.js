@@ -5,8 +5,8 @@ export const FooterWrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 450px;
-  background-color: #010b01;
-  color: #cccccc;
+  background-color: #1a1a1a;
+  color: #DEE7E1;
   padding: 20px;
 
   @media screen and (max-width: 768px) {
@@ -34,9 +34,13 @@ export const ImageWrapper = styled.div`
   background-image: linear-gradient(to bottom right, #0d6759, #0D110D);
   padding: 5px;
   aspect-ratio: 1/1;
-  max-width: 350px;
+  max-width: 18.75rem;
   border-radius: 50%;
   filter: drop-shadow(10px 8px 10px rgb(0, 0, 0, 0.25));
+
+  @media screen and (min-width:568px) {
+  max-width: 21.875rem;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -62,7 +66,7 @@ export const InfoContainer = styled.div`
 
   .title {
     font-size: 1.5rem;
-    color: #cccccc;
+    color: #DEE7E1;
     margin: 0;
 
     @media screen and (min-width: 768px) {
@@ -75,7 +79,7 @@ export const InfoContainer = styled.div`
     padding: 0;
     margin: 0;
     font-size: 1rem;
-    color: #cccccc;
+    color: #DEE7E1;
 
     li {
       margin: 4px 0;
@@ -83,19 +87,19 @@ export const InfoContainer = styled.div`
   }
 
   a {
-    color: #cccccc; /* Adjust color to match your theme */
+    color: #DEE7E1;
     text-decoration: none;
     font-weight: normal;
 
     &:hover {
       text-decoration: underline;
-      color: #0d6759; /* Accent color on hover */
+      color: #0d6759;
     }
   }
 
   p {
     font-size: 1rem;
-    color: #cccccc;
+    color: #DEE7E1;
     font-style: italic;
     max-width: 500px;
   }

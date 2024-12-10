@@ -28,7 +28,7 @@ export default function Footer() {
                 <a href="mailto:geo.rapeta@gmail.com">geo.rapeta@gmail.com</a>
               </li>
             </ul>
-            <p>“My ingenuity knows no limits, and my creativity doesn’t know what it’s limits are”</p>
+            <p>“My ingenuity knows no limits, and my creativity doesn’t know what those limits are”</p>
           </InfoContainer>
         </FooterContainer>
       </FooterWrapper>

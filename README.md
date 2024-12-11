@@ -1,71 +1,54 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # gerardo-rapeta-portfolio-site
+
+This is my portfolio page, meant to show recent projects as well as show off my skills.
+
+## Installation
+`npm install` 
+
+## Technologies Used:
+- javaScript/ React
+- Netlify
+- CSS
+- HTML
+
+## NPM Packages Used
+- `framer-motion`
+- `react-responsive`
+- `styled-components`
+- `swiper`
+- `@netlify/functions`
+
+# About
+**The following will be broken down by sections**
+
+### Overall
+Initially I was going to make this app with shades of whites an grays, and take a fair bit of my inspiration from 
+[Adham Dannaway's](https://www.adhamdannaway.com/) page but decided not to in the end. White, blue, and gray colors typically give off 
+more modern vibes which typically work for developes, but I like green and I don't want my website to look like anybody elses. If I did I 
+would've used a web builder.
+
+### Header
+The Header honestly wasn't too difficult to make, especially since I designed the whole app before building which saved me a ridiculous
+ammount of burn out. I figured I'd let some of my personality show here, and yes "Dork" is very much an alias. My *chef's kiss* to the header is just the gradient "border" which is just a background with some extra padding. I felt clever and it looks very nice.
+
+### Projects
+This is probably the only thing that had some influence from [Adham's](https://www.adhamdannaway.com/) site atleast with shape. My spin 
+on it was just the 3d animation to flip the card over to show some information about the projects while also allowing users to visit the 
+site and it's code.
+
+### About Me
+This was obviously more serious, and not to special of a component. Just a simple Div and media queries.
+
+### Skills
+Same deal as the About section, I show my technical and soft skills, and use `swiper/react` to add in making it more mobile friendly.
+
+### Journey
+*This* is my pride and joy of this project. Using framer-motion cards will translate a given number of pixels left and right depending 
+on their order as well as rotate. This effect occurs when `effect` is equal to "fan" which cause the cards to fan out as seen. and even 
+cooler that occurs when the component is brought into view `IntersectionObserver`.
+
+"But wait there's more!" - Billy Mays, upon clicking the cards display out allowing users to read my web development journey and it all looks **really cool**.
+
+### Footer 
+Not nearly as interesting as the Journey Section, but hey if there's any recruiters or tech leads reading this my email is 
+**geo.rapeta@gmail.com** clicking on the email in footer should also directly send you to your default emailing app so that you can reach out to me. I'm more likely to respond this way than I am via phone#.

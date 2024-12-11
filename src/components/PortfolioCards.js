@@ -108,7 +108,7 @@ export function GerardoRapetaPortfolioCard() {
   const [isHovering, setIsHovering] = useState(false)
 
   function onSamePageClick() {
-    alert("you're already here and I'll make this do something funny later")
+    alert("you're already here -_-")
   }
 
   return (

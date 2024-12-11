@@ -16,8 +16,6 @@ export default function HomePage(){
             <Skills />
             <Journey />
             <Footer />
-            {/* <p>height: {window.innerHeight}</p> */}
-            {/* <p>width: {window.innerWidth}</p> */}
         </StyledHomePage>
     )
 }

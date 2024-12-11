@@ -3,7 +3,7 @@
 This is my portfolio page, meant to show recent projects as well as show off my skills.
 
 ## Installation
-`npm install` 
+`npm install` and run `netlify dev` in your terminal
 
 ## Technologies Used:
 - javaScript/ React

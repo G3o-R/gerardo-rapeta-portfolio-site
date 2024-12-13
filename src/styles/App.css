@@ -48,3 +48,8 @@
   font-family: Arsenal-Regular;
   src: url(../../public/Arsenal-Regular.ttf)
 }
+
+@font-face {
+  font-family: Arsenal-Italic;
+  src: url(../../public/Arsenal-BoldItalic.ttf)
+}

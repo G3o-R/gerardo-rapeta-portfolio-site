@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import {
   Wrapper,
   DragMenuWrapper,
@@ -44,6 +43,9 @@ const DraggableMenu = () => {
     calculateClosestCorner();
   }, [position]);
 
+  // console.log(closestCorner)
+  console.log(position)
+
   return (
     <Wrapper>
       <DragMenuWrapper
@@ -51,9 +53,9 @@ const DraggableMenu = () => {
         drag
         dragConstraints={{
           left: 0,
-          right: window.innerWidth - 50,
+          right: isMenuOpen ? window.innerWidth - 300 : window.innerWidth - 50,
           top: 0,
-          bottom: window.innerHeight - 50,
+          bottom: isMenuOpen ? window.innerHeight - 400 : window.innerHeight - 50,
         }}
         dragMomentum={false}
         onDragEnd={(e, info) => setPosition({ x: info.point.x, y: info.point.y })}
@@ -77,7 +79,7 @@ const DraggableMenu = () => {
               </ul>
             </MenuNavContainer>
           </MenuNavWrapper>
-          <MenuBtn onClick={toggleMenu}> + </MenuBtn>
+          <MenuBtn className={`menu-button ${closestCorner}`} onClick={toggleMenu}> + </MenuBtn>
         </DragMenuContainer>
       </DragMenuWrapper>
     </Wrapper>

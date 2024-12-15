@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   pointer-events: none;
-`;
+  `;
 
 export const DragMenuWrapper = styled(motion.div)`
   position: fixed;
@@ -16,27 +16,27 @@ export const DragMenuWrapper = styled(motion.div)`
   max-width: 50px;
   max-height: 50px;
   background: transparent;
+  /* bottom: 0;
+  right: 0; */
 
   &.active {
     max-width: 17rem;
     max-height: 23.5rem;
-    height: 100%;
-    width: 100%;
     border-radius: 25px;
     background: linear-gradient(to bottom right, #09290b, #125316);
-
+    
   }
 `;
 
 export const DragMenuContainer = styled.div`
   position: relative;
+  height: 100%;
+  width: 100%;
   
 `;
 
 export const MenuBtn = styled.button`
   position: absolute;
-  left: 0;
-  top: 0;
   background: linear-gradient(to top right, #0d110d, #09290b);
   width: 50px;
   height: 50px;
@@ -45,6 +45,29 @@ export const MenuBtn = styled.button`
   border: none;
   cursor: pointer;
   pointer-events: auto;
+
+  /* bottom: 0;
+  right: 0; */
+
+  &.top-right{
+    right: 0;
+    top: 0;
+  }
+  
+  &.top-left{
+    left: 0;
+    top: 0;
+  }
+
+  &.bottom-right{
+    bottom: 0;
+    right: 0;
+  }
+
+  &.bottom-left{
+    bottom: 0;
+    left: 0;
+  }
 `;
 
 export const MenuNavWrapper = styled.div`

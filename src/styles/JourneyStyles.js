@@ -26,7 +26,6 @@ export const JourneyCardsWrapper = styled.div`
 `;
 
 export const JourneyCardsContainer = styled(motion.div)`
-  cursor: pointer;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -34,30 +33,32 @@ export const JourneyCardsContainer = styled(motion.div)`
   gap: 20px;
   max-width: 1560px;
   padding: 4.5rem .75rem .5rem;
-
+  
   @media screen and (max-width: 1560px) {
     &.fan{
       overflow:hidden;
+      cursor: pointer;
     }
     overflow-y:hidden;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-  & > * {
-    scroll-snap-align: center;
+    & > * {
+      scroll-snap-align: center;
+    }
+    
+    &::-webkit-scrollbar {
+      height: 8px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      cursor: grab;
+      
+      background: linear-gradient(to top, #0d110d, #334534);
+      border-radius: 4px;
+    }
   }
-
-  &::-webkit-scrollbar {
-    height: 8px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    cursor: pointer;
-    background: linear-gradient(to top, #0d110d, #334534);
-    border-radius: 4px;
-  }
-  }
-
-`;
+  
+  `;
 
 // card related styles
 
@@ -65,7 +66,7 @@ export const CardWrapper = styled(motion.div)`
   max-width: 300px;
   aspect-ratio: 3/5;
   width: 100%;
-  cursor: pointer;
+  /* cursor: pointer; */
 
   &.card-1 {
     z-index: 5;

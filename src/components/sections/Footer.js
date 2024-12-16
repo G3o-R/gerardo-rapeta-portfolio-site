@@ -25,7 +25,13 @@ export default function Footer() {
             <ul className="contact-location">
               <li>Greater Phoenix Area</li>
               <li>
-                <a href="mailto:geo.rapeta@gmail.com">geo.rapeta@gmail.com</a>
+                <a href="mailto:geo.rapeta@gmail.com" target="_blank">geo.rapeta@gmail.com</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/g3o-r/" target="_blank">Linkedin</a>
+              </li>
+              <li>
+                <a href="https://github.com/G3o-R" target="_blank">GitHub</a>
               </li>
             </ul>
             <p>“My ingenuity knows no limits, and my creativity doesn’t know what those limits are”</p>

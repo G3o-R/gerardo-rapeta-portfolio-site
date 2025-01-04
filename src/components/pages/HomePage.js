@@ -13,11 +13,11 @@ export default function HomePage(){
         <StyledHomePage>
             {/* <Header /> */}
             <HeaderUpdated/>
-            <Projects />
-            <About />
-            <Skills />
-            <Journey />
-            <Footer />
+            {/* <Projects /> */}
+            {/* <About /> */}
+            {/* <Skills /> */}
+            {/* <Journey /> */}
+            {/* <Footer /> */}
         </StyledHomePage>
     )
 }

@@ -5,6 +5,7 @@ overflow-x: hidden;
   h1, p{
     color: #dee7e1;
     font-family: Arsenal-Regular;
+    font-size: 90px;
   }
   li, h2 {
     font-family: InriaSerifRegular;

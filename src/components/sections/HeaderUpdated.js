@@ -36,7 +36,6 @@ export default function HeaderUpdated() {
               <TextBoxContainer className="text-box-container">
                 <h1 className="name">Gerardo Rapeta JR</h1>
                 <h1 className="position">-Software Engineer</h1>
-              </TextBoxContainer>
               <LanguagesWrapper className="languages-wrapper">
                 <LanguagesContainer className="languages-container">
                   <JavaScriptLogoSVG className="code-language"/>
@@ -46,6 +45,7 @@ export default function HeaderUpdated() {
                   <img src={SQL_Logo} alt="SQL Logo" className="code-language"/>
                 </LanguagesContainer>
               </LanguagesWrapper>
+              </TextBoxContainer>
             </TextBoxWrapper>
           </ContentContainer>
         </ContentWrapper>

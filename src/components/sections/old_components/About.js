@@ -5,7 +5,7 @@ import {
   TextContainer,
   TextWrapper,
   Header,
-} from "../../styles/AboutStyles";
+} from "../../../styles/AboutStyles";
 
 export default function About() {
   return (

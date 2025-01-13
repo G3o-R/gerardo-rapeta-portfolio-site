@@ -78,7 +78,6 @@ export const ContentContainer = styled.div`
   @media screen and (min-width: 769px) {
     flex-direction: row;
     background: linear-gradient(311.5deg, #183228 2.71%, #064943 97.29%);
-    max-height: 21.875rem;
   }
 
   @media screen and (min-width: 1080px) {

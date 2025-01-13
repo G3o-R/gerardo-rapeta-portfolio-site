@@ -7,7 +7,7 @@ import {
   ImageWrapper,
   TextBoxContainer,
   TextBoxWrapper,
-} from "../../styles/HeaderStyles";
+} from "../../../styles/HeaderStyles";
 import ProfilePic from "../../images/GeoRapetaPortfolioPic.avif"
 
 export default function Header() {

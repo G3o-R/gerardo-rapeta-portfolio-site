@@ -1,5 +1,5 @@
-import { HeaderContainer, ProjectsContainer, ProjectsSection } from "../../styles/ProjectsStyles";
-import { ORCCard, SaldanasGarageCard, GerardoRapetaPortfolioCard } from "../PortfolioCards";
+import { HeaderContainer, ProjectsContainer, ProjectsSection } from "../../../styles/ProjectsStyles";
+import { ORCCard, SaldanasGarageCard, GerardoRapetaPortfolioCard } from "../../PortfolioCards";
 
 export default function Projects(){
     return(

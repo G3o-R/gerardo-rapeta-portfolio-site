@@ -11,6 +11,11 @@ import {
   SubHeader,
   Text,
 } from "../../styles/ContentSectionStyles";
+import ORCFront from "../../images/ORCFront.avif";
+import SalGarFront from "../../images/SalGarFront.jpg";
+import GeoRapetaPortfolio from "../../images/GeoRapetaPortfolio.jpg"
+import FlatironCert from "../../images/FlatironCertImage.png"
+
 
 export default function ContentSection() {
   return (
@@ -19,7 +24,7 @@ export default function ContentSection() {
         <InfoCardWrapper className="info-card-wrapper about-me">
           <InfoCardContainer classname="info-card-container">
             <SubHeader>About Me</SubHeader>
-            <Text>
+            <Text className="about-me">
               Graduated from Flatiron School’s Software Engineering Flex
               Program. I always knew I wanted to be an engineer even when I was
               a child. Legos, Transformers, and The Matrix definitely nurtured
@@ -35,18 +40,18 @@ export default function ContentSection() {
           <InfoCardContainer classname="info-card-container">
             <ImageWrapper>
                 <ImageContainer>
-                    <img src="" alt="" />
+                    <img src={FlatironCert} alt="" />
                 </ImageContainer>
             </ImageWrapper>
           </InfoCardContainer>
         </InfoCardWrapper>
-        <InfoCardWrapper className="info-card-wrapper project1">
+        <InfoCardWrapper className="info-card-wrapper portfolio-project" id="1">
           <InfoCardContainer classname="info-card-container">
             <ImageWrapper>
                 <ImageContainer>
-                    <img src="" alt="" />
+                    <img src={SalGarFront} alt="" />
                     <OverlayInfo>
-                        <Text>
+                        <Text className="project-name">
                             Saldanas Garage
                         </Text>
                     </OverlayInfo>
@@ -59,13 +64,13 @@ export default function ContentSection() {
             </ButtonsWrapper>
           </InfoCardContainer>
         </InfoCardWrapper>
-        <InfoCardWrapper className="info-card-wrapper project2">
+        <InfoCardWrapper className="info-card-wrapper portfolio-project" id="2">
           <InfoCardContainer classname="info-card-container">
             <ImageWrapper>
                 <ImageContainer>
-                    <img src="" alt="" />
+                    <img src={ORCFront} alt="" />
                     <OverlayInfo>
-                        <Text>
+                        <Text className="project-name">
                             OxRiver Creations
                         </Text>
                     </OverlayInfo>
@@ -78,13 +83,13 @@ export default function ContentSection() {
             </ButtonsWrapper>
           </InfoCardContainer>
         </InfoCardWrapper>
-        <InfoCardWrapper className="info-card-wrapper project3">
-          <InfoCardContainer classname="info-card-container">
+        <InfoCardWrapper className="info-card-wrapper portfolio-project" id="3">
+          <InfoCardContainer className="info-card-container">
             <ImageWrapper>
                 <ImageContainer>
-                    <img src="" alt="" />
+                    <img src={GeoRapetaPortfolio} alt="" />
                     <OverlayInfo>
-                        <Text>
+                        <Text className="project-name">
                             Literally This Website Except I redesigned it
                         </Text>
                     </OverlayInfo>

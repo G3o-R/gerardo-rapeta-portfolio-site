@@ -71,9 +71,11 @@ export const Text = styled.p`
 
 export const ImageWrapper = styled.div`
   width: 100%;
-  height: 100%;
   overflow: hidden;
-  border-bottom: 0.125em solid #1a1a1a;
+  &.flatiron-cert{
+    height: 100%;
+    /* width */
+  }
 `;
 
 export const OverlayInfo = styled.div`
@@ -82,15 +84,14 @@ export const OverlayInfo = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* A translucent black overlay */
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s ease-in-out; /* Smooth fade effect */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;/
 
-  /* Text styling inside OverlayInfo */
   .project-name {
     color: #ffffff;
     font-size: 1.25rem;
@@ -101,19 +102,30 @@ export const OverlayInfo = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  /* height: 100%; */
+  height: 100%;
   width: 100%;
-  position: relative; /* Ensures OverlayInfo is positioned relative to this container */
+  position: relative;
   overflow: hidden;
+  
+  .flatiron-cert > & {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    img{
+      /* height: auto; */
+      width: 100%;
+    }
+  }
 
   img {
-    object-fit: contain;
+    object-fit: cover;
     height: 100%;
     width: 100%;
   }
 
+
   &:hover ${OverlayInfo} {
-    opacity: 1; /* Show overlay on hover */
+    opacity: 1;
   }
 `;
 

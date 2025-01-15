@@ -38,8 +38,8 @@ export default function ContentSection() {
         </InfoCardWrapper>
         <InfoCardWrapper className="info-card-wrapper flatiron-cert">
           <InfoCardContainer classname="info-card-container">
-            <ImageWrapper>
-                <ImageContainer>
+            <ImageWrapper className="image-wrapper flatiron-cert">
+                <ImageContainer className="image-container">
                     <img src={FlatironCert} alt="" />
                 </ImageContainer>
             </ImageWrapper>
@@ -47,10 +47,10 @@ export default function ContentSection() {
         </InfoCardWrapper>
         <InfoCardWrapper className="info-card-wrapper portfolio-project" id="1">
           <InfoCardContainer classname="info-card-container">
-            <ImageWrapper>
-                <ImageContainer>
+            <ImageWrapper className="image-wrapper">
+                <ImageContainer className="image-container">
                     <img src={SalGarFront} alt="" />
-                    <OverlayInfo>
+                    <OverlayInfo className="overlay">
                         <Text className="project-name">
                             Saldanas Garage
                         </Text>
@@ -66,10 +66,10 @@ export default function ContentSection() {
         </InfoCardWrapper>
         <InfoCardWrapper className="info-card-wrapper portfolio-project" id="2">
           <InfoCardContainer classname="info-card-container">
-            <ImageWrapper>
-                <ImageContainer>
+            <ImageWrapper className="image-wrapper">
+                <ImageContainer className="image-container">
                     <img src={ORCFront} alt="" />
-                    <OverlayInfo>
+                    <OverlayInfo className="overlay">
                         <Text className="project-name">
                             OxRiver Creations
                         </Text>
@@ -85,10 +85,10 @@ export default function ContentSection() {
         </InfoCardWrapper>
         <InfoCardWrapper className="info-card-wrapper portfolio-project" id="3">
           <InfoCardContainer className="info-card-container">
-            <ImageWrapper>
-                <ImageContainer>
+            <ImageWrapper className="image-wrapper">
+                <ImageContainer className="image-container">
                     <img src={GeoRapetaPortfolio} alt="" />
-                    <OverlayInfo>
+                    <OverlayInfo className="overlay">
                         <Text className="project-name">
                             Literally This Website Except I redesigned it
                         </Text>

@@ -2,6 +2,7 @@ import { StyledHomePage } from "../../styles/Page_Styles/HomePageStyles";
 
 import HeaderUpdated from "../sections/HeaderUpdated";
 import ContentSection from "../sections/ContentSection";
+import Journey from "../sections/Journey";
 
 export default function HomePage(){
     return (
@@ -10,9 +11,9 @@ export default function HomePage(){
             <HeaderUpdated/>
             {/* <Projects /> */}
             <ContentSection />
+            <Journey />
             {/* <About /> */}
             {/* <Skills /> */}
-            {/* <Journey /> */}
             {/* <Footer /> */}
         </StyledHomePage>
     )

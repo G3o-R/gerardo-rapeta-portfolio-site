@@ -70,8 +70,6 @@ export const InfoCardWrapper = styled.div`
   &.about-me {
     grid-area: about-me;
     @media screen and (max-width: 685px) {
-      /* height: calc(100vw / 3) */
-      /* height:100%; */
       max-height:100%;
     }
   }

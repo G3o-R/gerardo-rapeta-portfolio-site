@@ -53,20 +53,17 @@ export const JourneyCardsContainer = styled(motion.div)`
     &::-webkit-scrollbar-thumb {
       cursor: grab;
       
-      background: linear-gradient(to top, #0d110d, #334534);
+      background: linear-gradient(0deg, #02804e 0%, #03a062 100%);
       border-radius: 4px;
     }
   }
   
   `;
 
-// card related styles
-
 export const CardWrapper = styled(motion.div)`
   max-width: 300px;
   aspect-ratio: 3/5;
   width: 100%;
-  /* cursor: pointer; */
 
   &.card-1 {
     z-index: 5;
@@ -98,25 +95,19 @@ export const CardWrapper = styled(motion.div)`
 `;
 
 export const CardContainer = styled.div`
-  background: linear-gradient(to bottom right, #1a1a1a, #0d110d);
-  background-color: #1a1a1a;
+  background: linear-gradient(0deg, #02804e 0%, #03a062 100%);
   width: 100%;
   height: 100%;
-  border-radius: 18px;
-  border: 1px solid #09290b;
-  /* box-shadow: 4px 4px 23px 2px #33453425; */
+  border: .5rem solid #0d110d;
   text-align: left;
 `;
 
 export const TextBoxWrapper = styled.div`
-  /* width: 100%; */
 `;
 
 export const TextBoxContainer = styled.div`
   text-align: left;
-  /* width: 100%; */
   padding: 0.75rem;
-  /* opacity: 0; */
 
   h2 {
     text-decoration: none;

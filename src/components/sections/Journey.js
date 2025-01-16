@@ -8,7 +8,7 @@ import {
   JourneySection,
   TextBoxContainer,
   TextBoxWrapper,
-} from "../../../styles/JourneyStyles";
+} from "../../styles/JourneyStyles";
 
 export default function Journey() {
   const [effect, setEffect] = useState("display");

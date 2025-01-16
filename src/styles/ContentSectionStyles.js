@@ -11,7 +11,7 @@ export const StyledSection = styled.section`
 export const ContentContainer = styled.div`
   max-width: 1560px;
   display: grid;
-  gap: 1rem 0.375rem;
+  gap: .75rem 1.375rem;
   width: 100%;
   height: 100%;
   grid-template-columns: 1fr;

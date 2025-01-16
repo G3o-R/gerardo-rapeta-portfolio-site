@@ -4,9 +4,9 @@ export const StyledSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
   flex-direction: column;
-`;
+  padding: 1rem;
+  `;
 
 export const ContentContainer = styled.div`
   max-width: 1560px;
@@ -41,7 +41,7 @@ export const ContentContainer = styled.div`
 export const InfoCardWrapper = styled.div`
   height: 100%;
   max-height: 20rem;
-  width: 100%;
+  /* width: 100%; */
   background-color: #0d110d;
   padding: 5px;
 
@@ -210,10 +210,11 @@ export const SwiperContainer = styled.div`
   justify-content: center;
   /* gap: 3rem; */
   width: 100%;
-  margin-top: 10px;
+  margin-top: 1rem;
   
   .recent-projects{
     margin: .5rem 0rem;
+    width: 100%;
   }
 
   .swiper {

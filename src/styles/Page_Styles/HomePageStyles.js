@@ -5,29 +5,29 @@ overflow-x: hidden;
   h1{
     color: #ffffff;
     font-family: Arsenal-Regular;
-    font-size: 35px;
+    font-size: 2.1875rem;
 
     @media screen and (min-width: 568px){
-      font-size: 40px;
+      font-size: 2.5rem;
     }
 
     @media screen and (min-width: 790px) {
-    font-size: 45px;
+    font-size: 2.8125rem;
     }
 
     @media screen and (min-width: 868px) {
-      font-size: 50px
+      font-size: 3.125rem
     }
     @media screen and (min-width: 960px) {
-      font-size: 50px
+      font-size: 3.125rem
     }
 
     @media screen and (min-width: 1080px) {
-      font-size: 70px
+      font-size: 4.375rem
     }
 
     @media screen and (min-width: 1250px){
-      font-size: 90px;
+      font-size: 5.625rem;
     }
   }
 

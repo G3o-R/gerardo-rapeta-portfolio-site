@@ -1,23 +1,35 @@
 import {
-    ButtonsContainer,
-    ButtonsWrapper,
   ContentContainer,
   ImageContainer,
   ImageWrapper,
   InfoCardContainer,
   InfoCardWrapper,
-  OverlayInfo,
   StyledSection,
   SubHeader,
   Text,
+  NavButton,
+  SwiperContainer,
 } from "../../styles/ContentSectionStyles";
-import ORCFront from "../../images/ORCFront.avif";
-import SalGarFront from "../../images/SalGarFront.jpg";
-import GeoRapetaPortfolio from "../../images/GeoRapetaPortfolio.jpg"
-import FlatironCert from "../../images/FlatironCertImage.png"
+import FlatironCert from "../../images/FlatironCertImage.png";
+import {
+  ORCCard,
+  SaldanasGarageCard,
+  GerardoRapetaPortfolioCard,
+} from "../PortfolioCards";
 
+import { useMediaQuery } from "react-responsive";
+import { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 export default function ContentSection() {
+  const swiperRef = useRef(null);
+  const isMobile = useMediaQuery({
+    query: "(min-width: 668px)",
+  });
+
   return (
     <StyledSection className="content-section">
       <ContentContainer classname="content-container">
@@ -36,73 +48,52 @@ export default function ContentSection() {
             </Text>
           </InfoCardContainer>
         </InfoCardWrapper>
+        {/* clicking on this should open an overlay to completely display Certification */}
         <InfoCardWrapper className="info-card-wrapper flatiron-cert">
           <InfoCardContainer classname="info-card-container">
             <ImageWrapper className="image-wrapper flatiron-cert">
-                <ImageContainer className="image-container">
-                    <img src={FlatironCert} alt="" />
-                </ImageContainer>
+              <ImageContainer className="image-container">
+                <img src={FlatironCert} alt="" />
+              </ImageContainer>
             </ImageWrapper>
           </InfoCardContainer>
         </InfoCardWrapper>
-        <InfoCardWrapper className="info-card-wrapper portfolio-project" id="1">
-          <InfoCardContainer classname="info-card-container">
-            <ImageWrapper className="image-wrapper">
-                <ImageContainer className="image-container">
-                    <img src={SalGarFront} alt="" />
-                    <OverlayInfo className="overlay">
-                        <Text className="project-name">
-                            Saldanas Garage
-                        </Text>
-                    </OverlayInfo>
-                </ImageContainer>
-            </ImageWrapper>
-            <ButtonsWrapper>
-                <ButtonsContainer>
-                    button here button here
-                </ButtonsContainer>
-            </ButtonsWrapper>
-          </InfoCardContainer>
-        </InfoCardWrapper>
-        <InfoCardWrapper className="info-card-wrapper portfolio-project" id="2">
-          <InfoCardContainer classname="info-card-container">
-            <ImageWrapper className="image-wrapper">
-                <ImageContainer className="image-container">
-                    <img src={ORCFront} alt="" />
-                    <OverlayInfo className="overlay">
-                        <Text className="project-name">
-                            OxRiver Creations
-                        </Text>
-                    </OverlayInfo>
-                </ImageContainer>
-            </ImageWrapper>
-            <ButtonsWrapper>
-                <ButtonsContainer>
-                    button here button here
-                </ButtonsContainer>
-            </ButtonsWrapper>
-          </InfoCardContainer>
-        </InfoCardWrapper>
-        <InfoCardWrapper className="info-card-wrapper portfolio-project" id="3">
-          <InfoCardContainer className="info-card-container">
-            <ImageWrapper className="image-wrapper">
-                <ImageContainer className="image-container">
-                    <img src={GeoRapetaPortfolio} alt="" />
-                    <OverlayInfo className="overlay">
-                        <Text className="project-name">
-                            Literally This Website Except I redesigned it
-                        </Text>
-                    </OverlayInfo>
-                </ImageContainer>
-            </ImageWrapper>
-            <ButtonsWrapper>
-                <ButtonsContainer>
-                    button here button here
-                </ButtonsContainer>
-            </ButtonsWrapper>
-          </InfoCardContainer>
-        </InfoCardWrapper>
+        {isMobile ? (
+          <>
+            <SaldanasGarageCard />
+            <ORCCard />
+            <GerardoRapetaPortfolioCard />
+          </>
+        ) : null}
       </ContentContainer>
+      {isMobile ? null : (
+        <SwiperContainer className="swiper-container">
+          {/* <SubHeader className="recent-projects">Recent Projects</SubHeader> */}
+          <Swiper
+            modules={[Navigation]}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
+            spaceBetween={10}
+            slidesPerView={1}
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+          >
+            <SwiperSlide>
+              <SaldanasGarageCard />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ORCCard />
+            </SwiperSlide>
+            <SwiperSlide>
+              <GerardoRapetaPortfolioCard />
+            </SwiperSlide>
+            <NavButton className="swiper-button-prev"></NavButton>
+            <NavButton className="swiper-button-next"></NavButton>
+          </Swiper>
+        </SwiperContainer>
+      )}
+      {/* <Projects /> */}
     </StyledSection>
   );
 }

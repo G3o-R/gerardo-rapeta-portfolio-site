@@ -11,7 +11,7 @@ export const StyledSection = styled.section`
 export const ContentContainer = styled.div`
   max-width: 1560px;
   display: grid;
-  gap: .75rem 1.375rem;
+  gap: 1rem;
   width: 100%;
   height: 100%;
   grid-template-columns: 1fr;
@@ -41,17 +41,18 @@ export const ContentContainer = styled.div`
 export const InfoCardWrapper = styled.div`
   height: 100%;
   max-height: 20rem;
-  /* width: 100%; */
   background-color: #0d110d;
   padding: 5px;
-
+  
   &.portfolio-project {
+    width: 100%;
     max-height: 18.75rem;
     @media screen and (min-width: 685px) {
-      height: calc((100vw / 3) - 2.75rem)
+      height: calc((100vw / 3) - 2.75rem);
+      width: auto;
     }
     @media screen and (min-width: 1080px) {
-      height: calc(100vw / 5)
+      height: calc(100vw / 5);
     }
   }
   &.flatiron-cert {

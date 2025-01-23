@@ -101,6 +101,7 @@ export const SubHeader = styled.h2`
   margin: 0rem 1rem 0rem;
   padding-top: 1rem;
   text-align: left;
+  
 `;
 
 export const Text = styled.p`

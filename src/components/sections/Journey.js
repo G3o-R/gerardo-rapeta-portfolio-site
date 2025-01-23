@@ -145,7 +145,7 @@ export default function Journey() {
                 <TextBoxWrapper className="text-box-wrapper">
                   <TextBoxContainer className="text-box-container">
                     <h2>{cardData.title}</h2>
-                    <p>{cardData.content}</p>
+                    <p className="journey">{cardData.content}</p>
                   </TextBoxContainer>
                 </TextBoxWrapper>
               </CardContainer>

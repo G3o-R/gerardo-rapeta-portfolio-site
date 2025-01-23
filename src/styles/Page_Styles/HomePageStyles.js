@@ -38,10 +38,18 @@ overflow-x: hidden;
 
   }
 
-  p {
+  p, li {
     font-family: InriaSerifRegular;
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
+
+  /* p{
+    font-size: 1.75rem;
+  }
+
+  li{
+    font-size: 1.75rem;
+  } */
 
 `;

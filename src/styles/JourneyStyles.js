@@ -115,7 +115,7 @@ export const TextBoxContainer = styled.div`
     font-size: 2.5em;
   }
 
-  p {
+  .journey {
     margin-right: 2em;
     font-size: 1.25rem;
   }

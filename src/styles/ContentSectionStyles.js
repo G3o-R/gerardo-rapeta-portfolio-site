@@ -137,7 +137,7 @@ export const OverlayInfo = styled.div`
   z-index: 1;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  / .project-name {
+   .project-name {
     color: #ffffff;
     font-size: 1.25rem;
     font-weight: bold;

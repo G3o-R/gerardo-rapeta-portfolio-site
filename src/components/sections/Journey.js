@@ -97,7 +97,7 @@ export default function Journey() {
   return (
     <JourneySection ref={journeyRef} className="journey-section">
       <Header className="header-container">
-        <h2>Web Dev Journey</h2>
+        <h2 className="title">Web Dev Journey</h2>
       </Header>
       <JourneyCardsWrapper className="cards-wrapper">
         <JourneyCardsContainer

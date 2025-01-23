@@ -36,6 +36,10 @@ overflow-x: hidden;
     color: #ffffff;
     font-size: 3rem;
 
+    &.title{
+      font-size: 6.25rem;
+    }
+
   }
 
   p, li {

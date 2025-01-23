@@ -7,14 +7,12 @@ export const JourneySection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow:hidden;
+  overflow: hidden;
   padding: 40px 0;
 `;
 
 export const Header = styled.div`
-
   h2 {
-    font-size: 3rem;
     text-decoration: underline;
     margin: 0;
   }
@@ -32,33 +30,32 @@ export const JourneyCardsContainer = styled(motion.div)`
   justify-content: flex-start;
   gap: 20px;
   max-width: 1560px;
-  padding: 4.5rem .75rem .5rem;
-  
+  padding: 4.5rem 0.75rem 0.5rem;
+
   @media screen and (max-width: 1560px) {
-    &.fan{
-      overflow:hidden;
+    &.fan {
+      overflow: hidden;
       cursor: pointer;
     }
-    overflow-y:hidden;
+    overflow-y: hidden;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     & > * {
       scroll-snap-align: center;
     }
-    
+
     &::-webkit-scrollbar {
       height: 8px;
     }
-    
+
     &::-webkit-scrollbar-thumb {
       cursor: grab;
-      
+
       background: linear-gradient(0deg, #02804e 0%, #03a062 100%);
       border-radius: 4px;
     }
   }
-  
-  `;
+`;
 
 export const CardWrapper = styled(motion.div)`
   max-width: 300px;
@@ -98,12 +95,11 @@ export const CardContainer = styled.div`
   background: linear-gradient(0deg, #02804e 0%, #03a062 100%);
   width: 100%;
   height: 100%;
-  border: .5rem solid #0d110d;
+  border: 0.5rem solid #0d110d;
   text-align: left;
 `;
 
-export const TextBoxWrapper = styled.div`
-`;
+export const TextBoxWrapper = styled.div``;
 
 export const TextBoxContainer = styled.div`
   text-align: left;

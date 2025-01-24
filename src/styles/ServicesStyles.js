@@ -11,12 +11,35 @@ export const ServicesContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: row;
-  gap: 0.75rem;
-  max-width: 1560px;
+  max-width: 92.5rem;
+  width: 100%;
+  /* position: relative; */
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .swiper-slide-active{
+    position: relative;
+    z-index: 3;
+  }
+
+  .swiper-slide-previous, .swiper-slide-next{
+    z-index:2;
+  }
 `;
 
 export const Header = styled.div`
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   h2 {
     text-decoration: underline;
     margin: 0;
@@ -25,7 +48,9 @@ export const Header = styled.div`
 
 export const ServicesCardWrapper = styled.div`
   height: 6.25em;
+  width: 100%;
   max-width: 27.5em;
+  min-width: 23.438rem;
 
   &.start-up {
     height: 50rem;
@@ -38,6 +63,7 @@ export const ServicesCardWrapper = styled.div`
   }
 
   &.advanced {
+    position: relative;
     height: 65.625rem;
     background: linear-gradient(180deg, #064943 0%, #053a36 100%);
   }
@@ -68,7 +94,7 @@ export const HeaderWrapper = styled.div`
 export const HeaderContainer = styled.div`
   display: flex;
   flex-direction: row;
-  margin: auto 10px;
+  margin: auto 0.625rem;
   gap: 0.5em;
   img {
     height: 4rem;
@@ -85,7 +111,12 @@ export const Services = styled.div``;
 export const ServiceWrapper = styled.div`
   margin: 2.5rem 1.875rem;
   position: relative;
-  max-height: 6.25rem;
+  height: 100%;
+  max-height: 5rem;
+
+  @media screen and (min-width: 1280px) {
+    max-height: 6.25rem;
+  }
 
   .start-up > &:not(:last-child)::after {
     content: "";
@@ -134,13 +165,32 @@ export const ServiceContainer = styled.div`
     flex-direction: row-reverse;
   }
 
-  img {
-    height: 6.25rem;
+  img,
+  svg {
+    height: 5rem;
+
+    @media screen and (min-width: 1280px) {
+      height: 6.25rem;
+    }
   }
 `;
 
 export const DescriptionContainer = styled.div`
   &.pricing {
     text-align: left;
+  }
+`;
+
+export const NavButton = styled.button`
+  background-color: rgba(10, 10, 10, 0.2);
+  border: none;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  height: 50px;
+  width: 50px;
+  &::after{
+    color: #c2c2c2;
+    font-size: 28px;
+    font-weight: 700;
   }
 `;

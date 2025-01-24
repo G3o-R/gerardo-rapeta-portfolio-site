@@ -109,6 +109,7 @@ export const Text = styled.p`
   font-style: titleCase;
   &.about-me {
     text-align: left;
+    font-size: 1.5rem;
   }
 `;
 

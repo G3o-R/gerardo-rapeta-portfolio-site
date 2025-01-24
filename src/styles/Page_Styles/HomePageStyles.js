@@ -45,12 +45,15 @@ overflow-x: hidden;
   p, li {
     font-family: InriaSerifRegular;
     color: #ffffff;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    @media screen and (min-width: 1280px){
+      font-size: 1.75rem;
+    }
   }
 
   /* p{
-    font-size: 1.75rem;
-  }
+      font-size: 1.5rem;      
+    }
 
   li{
     font-size: 1.75rem;

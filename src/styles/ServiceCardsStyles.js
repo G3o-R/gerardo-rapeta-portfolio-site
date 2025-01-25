@@ -10,7 +10,7 @@ export const ServicesCardWrapper = styled.div`
   }
 
   &.start-up {
-    height: 47rem;
+    height: 43rem;
     background: #064943;
 
     @media screen and (min-width: 1280px) {
@@ -19,7 +19,7 @@ export const ServicesCardWrapper = styled.div`
   }
 
   &.standard {
-    height: 54.375rem;
+    height: 50.375rem;
     background: linear-gradient(180deg, #064943 0%, #053a36 100%);
     @media screen and (min-width: 1280px) {
       height: 59.375rem;
@@ -28,7 +28,7 @@ export const ServicesCardWrapper = styled.div`
 
   &.advanced {
     position: relative;
-    height: 56.625rem;
+    height: 52.625rem;
     background: linear-gradient(180deg, #064943 0%, #053a36 100%);
     @media screen and (min-width: 1280px) {
       height: 65.625rem;
@@ -76,14 +76,15 @@ export const HeaderContainer = styled.div`
 export const Services = styled.div``;
 
 export const ServiceWrapper = styled.div`
-  margin: 2.5rem 1.875rem;
+  margin: 1.5rem 1.875rem;
   position: relative;
   height: 100%;
   max-height: 5rem;
 
   @media screen and (min-width: 1280px) {
     max-height: 6.25rem;
-  }
+  margin: 2.5rem 1.875rem;
+}
 
   .start-up > &:not(:last-child)::after {
     content: "";
@@ -134,7 +135,7 @@ export const ServiceContainer = styled.div`
 
   img,
   svg {
-    height: 5rem;
+    height: 4.5rem;
 
     @media screen and (min-width: 1280px) {
       height: 6.25rem;

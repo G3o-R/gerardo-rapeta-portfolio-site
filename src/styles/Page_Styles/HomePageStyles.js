@@ -1,52 +1,67 @@
 import styled from "styled-components";
 
 export const StyledHomePage = styled.div`
-overflow-x: hidden;
-  h1{
+  overflow-x: hidden;
+  h1 {
     color: #ffffff;
     font-family: Arsenal-Regular;
     font-size: 2.1875rem;
 
-    @media screen and (min-width: 568px){
+    @media screen and (min-width: 568px) {
       font-size: 2.5rem;
     }
 
     @media screen and (min-width: 790px) {
-    font-size: 2.8125rem;
+      font-size: 2.8125rem;
     }
 
     @media screen and (min-width: 868px) {
-      font-size: 3.125rem
+      font-size: 3.125rem;
     }
     @media screen and (min-width: 960px) {
-      font-size: 3.125rem
+      font-size: 3.125rem;
     }
 
     @media screen and (min-width: 1080px) {
-      font-size: 4.375rem
+      font-size: 4.375rem;
     }
 
-    @media screen and (min-width: 1250px){
+    @media screen and (min-width: 1250px) {
       font-size: 5.625rem;
     }
   }
 
-  h2{
+  h2 {
     font-family: Arsenal-Regular;
     color: #ffffff;
     font-size: 3rem;
 
-    &.title{
-      font-size: 6.25rem;
-    }
+    &.title {
+      font-size: 3rem;
+      @media screen and (min-width: 868px) {
+        font-size: 3.125rem;
+      }
+      @media screen and (min-width: 960px) {
+        font-size: 4.375rem;
+      }
 
+      @media screen and (min-width: 1080px) {
+        font-size: 5.625rem;
+      }
+
+      @media screen and (min-width: 1250px) {
+        font-size: 6.25rem;
+      }
+
+    }
   }
 
-  p, li {
+  p,
+  li {
     font-family: InriaSerifRegular;
     color: #ffffff;
     font-size: 1.5rem;
-    @media screen and (min-width: 1280px){
+    @media screen and (min-width: 1280px) {
       font-size: 1.75rem;
     }
   }
@@ -58,5 +73,4 @@ overflow-x: hidden;
   li{
     font-size: 1.75rem;
   } */
-
 `;

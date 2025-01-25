@@ -13,7 +13,6 @@ export const ServicesContainer = styled.div`
   flex-direction: row;
   max-width: 92.5rem;
   width: 100%;
-  /* position: relative; */
 
   .swiper {
     width: 100%;
@@ -28,14 +27,6 @@ export const ServicesContainer = styled.div`
     z-index: 1;
   }
 
-  .swiper-slide-active{
-    position: relative;
-    z-index: 3;
-  }
-
-  .swiper-slide-previous, .swiper-slide-next{
-    z-index:2;
-  }
 `;
 
 export const Header = styled.div`
@@ -47,10 +38,13 @@ export const Header = styled.div`
 `;
 
 export const ServicesCardWrapper = styled.div`
-  height: 6.25em;
   width: 100%;
   max-width: 27.5em;
-  min-width: 23.438rem;
+  min-width: calc(100vw - 5px);
+
+  @media screen and (min-width: 468px){
+    min-width: 25rem;
+  }
 
   &.start-up {
     height: 50rem;

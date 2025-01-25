@@ -14,7 +14,7 @@ export default function ServicesSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [slidesLength, setSlidesLength] = useState(0);
   const isLarge = useMediaQuery({
-    query: "(min-width: 1560px)",
+    query: "(min-width: 1440px)",
   });
 
   const handleSwiperInit = (swiper) => {
@@ -46,17 +46,17 @@ export default function ServicesSection() {
           }}
           spaceBetween={-50}
           slidesPerView={3}
-          centeredSlides={true}
-          initialSlide={1}
+          centeredSlides={isLarge ? false : true}
+          initialSlide={0}
           onSwiper={handleSwiperInit}
           onSlideChange={handleSlideChange}
-          allowTouchMove={false}
+          // allowTouchMove={false}
         >
           {services.map((service, index) => {
             const distanceFromCenter = Math.abs(currentIndex - index);
             const zIndex = 3 - distanceFromCenter;
             const overlayOpacity = 0.1 * distanceFromCenter;
-            const scale = 1 - 0.05 * distanceFromCenter;
+            const scale = .9 + 0.05 * distanceFromCenter;
 
             return (
               <SwiperSlide
@@ -65,6 +65,7 @@ export default function ServicesSection() {
                   zIndex,
                   transition: "z-index 0.3s ease",
                 }}
+                className="my-swiper-slide"
               >
                 <motion.div
                   style={{
@@ -72,7 +73,7 @@ export default function ServicesSection() {
                     originY: 0.5,
                     position: "relative",
                   }}
-                  animate={{ scale }}
+                  animate={ isLarge ? "" : {scale} }
                   transition={{ type: "spring", stiffness: 50 }}
                 >
                   <div
@@ -83,7 +84,7 @@ export default function ServicesSection() {
                       width: "100%",
                       height: "100%",
                       backgroundColor: "rgba(0, 0, 0, 1)",
-                      opacity: overlayOpacity,
+                      opacity:  isLarge ? 0 : overlayOpacity,
                       zIndex: 4,
                       pointerEvents: "none",
                       transition: "opacity 0.3s ease",

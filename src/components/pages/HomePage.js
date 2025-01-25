@@ -5,6 +5,7 @@ import ContentSection from "../sections/ContentSection";
 import Journey from "../sections/Journey";
 import Footer from "../sections/Footer";
 import ServicesSection from "../sections/ServicesSection";
+import CallToAction from "../sections/CallToAction";
 
 export default function HomePage(){
     return (
@@ -13,6 +14,7 @@ export default function HomePage(){
             <ContentSection />
             <Journey />
             <ServicesSection />
+            <CallToAction />
             <Footer />
         </StyledHomePage>
     )

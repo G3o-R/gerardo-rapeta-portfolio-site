@@ -13,6 +13,9 @@ export default function ServicesSection() {
   const swiperRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [slidesLength, setSlidesLength] = useState(0);
+  // const isLarge = useMediaQuery({
+  //   query: "(min-width: 1080px)",
+  // });
   const isLarge = useMediaQuery({
     query: "(min-width: 1440px)",
   });

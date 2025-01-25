@@ -45,7 +45,7 @@ export const NavButton = styled.button`
   width: 50px;
   &::after {
     color: #c2c2c2;
-    font-size: 28px;
+    font-size: 1.5rem;
     font-weight: 700;
   }
 `;
@@ -53,7 +53,7 @@ export const NavButton = styled.button`
 export const HostingInfoWrapper = styled.div`
   max-width: 950px;
   width: 100%;
-  margin: 0 0.5rem 1rem;
+  margin: 0.5rem 0.5rem 1rem;
   @media screen and (min-width: 1440px) {
     margin: 2rem 0;
   }
@@ -61,7 +61,7 @@ export const HostingInfoWrapper = styled.div`
 
 export const HostingInfoContainer = styled.div`
   background-color: #132820;
-  border-radius: 45px;
+  border-radius: 3rem;
   padding: 1rem;
   strong {
     color: #03a062;

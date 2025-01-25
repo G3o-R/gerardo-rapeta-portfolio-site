@@ -7,7 +7,7 @@ import {
     ServiceContainer,
     DescriptionContainer,
     HeaderContainer,
-  } from "../styles/ServicesStyles";
+  } from "../styles/ServiceCardsStyles";
 
   import { ReactComponent as AdminSVG } from "../images/serviceSVGs/Admin.svg";
 import { ReactComponent as CertificateSVG } from "../images/serviceSVGs/Certificate.svg";

@@ -13,8 +13,6 @@ export default function HomePage(){
             <ContentSection />
             <Journey />
             <ServicesSection />
-            {/* <About /> */}
-            {/* <Skills /> */}
             <Footer />
         </StyledHomePage>
     )

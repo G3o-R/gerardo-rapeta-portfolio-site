@@ -6,7 +6,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import { StyledServicesSection, ServicesContainer, Header, NavButton } from "../../styles/ServicesStyles";
+import { StyledServicesSection, ServicesContainer, Header, NavButton, HostingInfoWrapper, HostingInfoContainer } from "../../styles/ServicesStyles";
 import { StartUpService, StandardService, AdvancedService } from "../ServiceCards";
 
 export default function ServicesSection() {
@@ -60,7 +60,7 @@ export default function ServicesSection() {
 
             return (
               <SwiperSlide
-                key={index}
+                key={service.label}
                 style={{
                   zIndex,
                   transition: "z-index 0.3s ease",
@@ -99,6 +99,14 @@ export default function ServicesSection() {
           <NavButton className="swiper-button-next"></NavButton>
         </Swiper>
       </ServicesContainer>
+      <HostingInfoWrapper>
+        <HostingInfoContainer>
+          <strong>Prices do not include purchase of domain name</strong>
+          <p>$10/month hosting fee starting from the day the website is published</p>
+          <p>For any questions about prices or services not specifically listed please ask <a href="mailto:geo.rapeta@gmail.com" target="_blank">here.</a></p>
+        </HostingInfoContainer>
+      </HostingInfoWrapper>
+
     </StyledServicesSection>
   );
 }

@@ -105,7 +105,7 @@ export const SubHeader = styled.h2`
 `;
 
 export const Text = styled.p`
-  margin: 0.5rem 1rem;
+  margin: 0rem 1rem 0.75rem;
   font-style: titleCase;
   &.about-me {
     text-align: left;

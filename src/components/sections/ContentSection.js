@@ -32,9 +32,9 @@ export default function ContentSection() {
 
   return (
     <StyledSection className="content-section">
-      <ContentContainer classname="content-container">
+      <ContentContainer className="content-container">
         <InfoCardWrapper className="info-card-wrapper about-me">
-          <InfoCardContainer classname="info-card-container">
+          <InfoCardContainer className="info-card-container">
             <SubHeader>About Me</SubHeader>
             <Text className="about-me">
               Graduated from Flatiron School’s Software Engineering Flex
@@ -50,7 +50,7 @@ export default function ContentSection() {
         </InfoCardWrapper>
         {/* clicking on this should open an overlay to completely display Certification */}
         <InfoCardWrapper className="info-card-wrapper flatiron-cert">
-          <InfoCardContainer classname="info-card-container">
+          <InfoCardContainer className="info-card-container">
             <ImageWrapper className="image-wrapper flatiron-cert">
               <ImageContainer className="image-container">
                 <img src={FlatironCert} alt="" />

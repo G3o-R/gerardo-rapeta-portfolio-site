@@ -18,7 +18,7 @@ import { useState } from "react";
 export function ORCCard() {
   return (
     <InfoCardWrapper className="info-card-wrapper portfolio-project" id="2">
-      <InfoCardContainer classname="info-card-container">
+      <InfoCardContainer className="info-card-container">
         <ImageWrapper className="image-wrapper">
           <ImageContainer className="image-container">
             <img src={ORCFront} alt="" />
@@ -52,7 +52,7 @@ export function SaldanasGarageCard() {
   const [isHovering, setIsHovering] = useState(false);
   return (
     <InfoCardWrapper className="info-card-wrapper portfolio-project" id="1">
-      <InfoCardContainer classname="info-card-container">
+      <InfoCardContainer className="info-card-container">
         <ImageWrapper className="image-wrapper">
           <ImageContainer className="image-container">
             <img src={SalGarFront} alt="" />

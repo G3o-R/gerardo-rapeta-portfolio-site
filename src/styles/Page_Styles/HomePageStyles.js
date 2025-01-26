@@ -12,19 +12,19 @@ export const StyledHomePage = styled.div`
     }
 
     @media screen and (min-width: 790px) {
-      font-size: 2.8125rem;
+      font-size: 2.5rem;
     }
 
     @media screen and (min-width: 868px) {
-      font-size: 3.125rem;
+      font-size: 2.75rem;
     }
 
     @media screen and (min-width: 1080px) {
-      font-size: 4.375rem;
+      font-size: 3.75rem;
     }
 
     @media screen and (min-width: 1250px) {
-      font-size: 5.625rem;
+      font-size: 4.5rem;
     }
   }
 

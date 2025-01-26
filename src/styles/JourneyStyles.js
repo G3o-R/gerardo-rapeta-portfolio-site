@@ -114,5 +114,6 @@ export const TextBoxContainer = styled.div`
   .journey {
     margin-right: 2em;
     font-size: 1.25rem;
+    line-height: 1.5rem;
   }
 `;

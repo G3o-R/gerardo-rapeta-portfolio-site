@@ -4,7 +4,7 @@ export const StyledHomePage = styled.div`
   overflow-x: hidden;
   h1 {
     color: #ffffff;
-    font-family: Arsenal-Regular;
+    font-family: Roboto, Arsenal-Regular;
     font-size: 2.1875rem;
 
     @media screen and (min-width: 568px) {
@@ -29,7 +29,7 @@ export const StyledHomePage = styled.div`
   }
 
   h2 {
-    font-family: Arsenal-Regular;
+    font-family: ArsenalSC-Bold, Arsenal-Regular;
     color: #ffffff;
     font-size: 3rem;
 
@@ -55,7 +55,7 @@ export const StyledHomePage = styled.div`
 
   p,
   li {
-    font-family: InriaSerifRegular;
+    font-family: ArsenalSC-Regular, Arsenal-Regular;
     color: #ffffff;
     font-size: 1.5rem;
     @media screen and (min-width: 1280px) {

@@ -48,3 +48,18 @@
   font-family: Arsenal-Regular;
   src: url(../../public/Arsenal-Regular.ttf)
 }
+
+@font-face {
+  font-family: ArsenalSC-Bold;
+  src: url(../../public/ArsenalSC-Bold.ttf)
+}
+
+@font-face {
+  font-family: ArsenalSC-Regular;
+  src: url(../../public/ArsenalSC-Regular.ttf)
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../../public//Roboto-VariableFont_wdth\,wght.ttf);
+}

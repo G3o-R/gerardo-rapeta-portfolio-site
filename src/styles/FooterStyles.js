@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.div`
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,8 +14,18 @@ export const FooterWrapper = styled.div`
     height: auto;
     padding: 40px 20px;
   }
-`;
 
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(279.08deg, #064943 0.28%, #078453 99.73%);
+    border-radius: 99rem 99rem 0 0;
+  }
+`;
 export const FooterContainer = styled.div`
   display: flex;
   flex-direction: row;

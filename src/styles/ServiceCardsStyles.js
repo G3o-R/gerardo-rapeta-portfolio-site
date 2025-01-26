@@ -19,7 +19,7 @@ export const ServicesCardWrapper = styled.div`
   }
 
   &.standard {
-    height: 50.375rem;
+    height: 48.375rem;
     background: linear-gradient(180deg, #064943 0%, #053a36 100%);
     @media screen and (min-width: 1280px) {
       height: 59.375rem;
@@ -28,7 +28,7 @@ export const ServicesCardWrapper = styled.div`
 
   &.advanced {
     position: relative;
-    height: 52.625rem;
+    height: 50.625rem;
     background: linear-gradient(180deg, #064943 0%, #053a36 100%);
     @media screen and (min-width: 1280px) {
       height: 65.625rem;

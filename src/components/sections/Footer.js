@@ -34,7 +34,7 @@ export default function Footer() {
                 <a href="https://github.com/G3o-R" target="_blank">GitHub</a>
               </li>
             </ul>
-            <p>“My ingenuity knows no limits, and my creativity doesn’t know what those limits are”</p>
+            <p>I make cool stuff</p>
           </InfoContainer>
         </FooterContainer>
       </FooterWrapper>

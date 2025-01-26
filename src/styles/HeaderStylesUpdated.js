@@ -102,7 +102,8 @@ export const ImageWrapper = styled.div`
   
   @media screen and (max-width: 568px){
     margin-left: auto;    
-    margin-right: -1.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: -1rem;
   }
   
   @media screen and (min-width: 769px) {

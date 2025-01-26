@@ -9,7 +9,7 @@ import {
     HeaderContainer,
   } from "../styles/ServiceCardsStyles";
 
-  import { ReactComponent as AdminSVG } from "../images/serviceSVGs/Admin.svg";
+import { ReactComponent as AdminSVG } from "../images/serviceSVGs/Admin.svg";
 import { ReactComponent as CertificateSVG } from "../images/serviceSVGs/Certificate.svg";
 import { ReactComponent as ContactSVG } from "../images/serviceSVGs/Contact.svg";
 import { ReactComponent as FivePagesSVG } from "../images/serviceSVGs/FivePages.svg";
@@ -21,6 +21,7 @@ import doubleDollar from "../images/serviceSVGs/double-dollar.png";
 import tripleDollar from "../images/serviceSVGs/triple-dollar.png";
 
 import StickmanRunningGif from "../images/serviceSVGs/stickman-running.gif";
+import AdvancedAnimationsGif from "../images/serviceSVGs/advanced-animations.gif"
 
   export function StartUpService(){
     return(
@@ -182,7 +183,7 @@ import StickmanRunningGif from "../images/serviceSVGs/stickman-running.gif";
               <ServiceWrapper className="service-wrapper">
                 <ServiceContainer className="service-container">
                   <img
-                    src={StickmanRunningGif}
+                    src={AdvancedAnimationsGif}
                     alt="basic animations gif"
                     className="stickman-gif"
                   />

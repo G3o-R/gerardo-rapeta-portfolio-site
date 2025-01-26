@@ -34,7 +34,8 @@ export default function Footer() {
                 <a href="https://github.com/G3o-R" target="_blank">GitHub</a>
               </li>
             </ul>
-            <p>I make cool stuff</p>
+            <p style={{marginBottom: 0}}>I make cool stuff</p>
+            <p style={{marginTop:0}}>Built & designed by Gerardo Rapeta</p>
           </InfoContainer>
         </FooterContainer>
       </FooterWrapper>

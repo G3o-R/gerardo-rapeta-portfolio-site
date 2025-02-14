@@ -1,12 +1,9 @@
 import {
-  ContentContainer,
   ImageContainer,
   ImageWrapper,
   InfoCardContainer,
   InfoCardWrapper,
   OverlayInfo,
-  StyledSection,
-  SubHeader,
   Text,
   LinksContainer,
 } from "../styles/ContentSectionStyles";
@@ -49,7 +46,6 @@ export function ORCCard() {
 }
 
 export function SaldanasGarageCard() {
-  const [isHovering, setIsHovering] = useState(false);
   return (
     <InfoCardWrapper className="info-card-wrapper portfolio-project" id="1">
       <InfoCardContainer className="info-card-container">
@@ -83,7 +79,6 @@ export function SaldanasGarageCard() {
 }
 
 export function GerardoRapetaPortfolioCard() {
-  const [isHovering, setIsHovering] = useState(false);
 
   function onSamePageClick() {
     alert("you're already here -_-");
